@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mart.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand animate-pulse" href="#home">
+                <i class="fas fa-shopping-cart me-2"></i>Fresh Mart
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5500/ecommerce/shopping/mart.html" onclick="showPage('home')">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5500/ecommerce/shopping/about.html" onclick="showPage('about')">
+                            <i class="fas fa-info-circle me-1"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5500/ecommerce/login.html" onclick="showPage('Login')">
+                            <i class="fas fa-boxes me-1"></i>Login
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('services')">
+                            <i class="fas fa-concierge-bell me-1"></i>Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('locations')">
+                            <i class="fas fa-map-marker-alt me-1"></i>Locations
+                        </a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showPage('contact')">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page-content active">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="hero-title animate-fadeInUp">Fresh Groceries Delivered Daily</h1>
+                        <p class="hero-subtitle animate-fadeInUp" style="animation-delay: 0.2s;">Quality products, unbeatable prices, and exceptional service for your family</p>
+                        <div class="animate-fadeInUp" style="animation-delay: 0.4s;">
+                            <button class="btn btn-primary-custom btn-lg me-3" onclick="showPage('products')">
+                                <i class="fas fa-shopping-basket me-2"></i>Shop Now
+                            </button>
+                            <button class="btn btn-outline-light btn-lg" onclick="showPage('about')">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="animate-fadeInUp">Why Choose Fresh Mart?</h2>
+                        <p class="lead text-muted animate-fadeInUp" style="animation-delay: 0.2s;">We're committed to providing you with the best grocery shopping experience</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card card-custom animate-fadeInLeft">
+                            <div class="card-body text-center p-4">
+                                <div class="product-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <h5>Fresh & Organic</h5>
+                                <p class="text-muted">Farm-fresh produce and organic options for healthier living</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card card-custom animate-fadeInUp" style="animation-delay: 0.2s;">
+                            <div class="card-body text-center p-4">
+                                <div class="product-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <h5>Fast Delivery</h5>
+                                <p class="text-muted">Quick and reliable delivery service to your doorstep</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card card-custom animate-fadeInRight" style="animation-delay: 0.4s;">
+                            <div class="card-body text-center p-4">
+                                <div class="product-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <h5>Best Prices</h5>
+                                <p class="text-muted">Competitive pricing with regular deals and discounts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item animate-fadeInUp">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item animate-fadeInUp" style="animation-delay: 0.1s;">
+                            <span class="stat-number">10000+</span>
+                            <span class="stat-label">Products</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item animate-fadeInUp" style="animation-delay: 0.2s;">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Locations</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item animate-fadeInUp" style="animation-delay: 0.3s;">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page-content">
+        <section class="py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="animate-fadeInUp">About Fresh Mart</h2>
+                        <p class="lead text-muted animate-fadeInUp" style="animation-delay: 0.2s;">Your trusted neighborhood grocery partner since 1995</p>
+                    </div>
+                </div>
+                
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <div class="animate-fadeInLeft">
+                            <h3>Our Story</h3>
+                            <p>Fresh Mart began as a small family-owned store with a simple mission: to provide fresh, quality groceries to our local community. Over the years, we've grown into a trusted chain while maintaining our commitment to excellence and personal service.</p>
+                            <p>We believe that good food brings families together, and we're honored to be part of your daily life. From farm-fresh produce to premium pantry staples, we carefully select every item in our store.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="animate-fadeInRight">
+                            <div style="height: 300px; background: linear-gradient(135deg, #4CAF50, #81C784); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                                <i class="fas fa-store" style="font-size: 4rem;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card card-custom animate-fadeInLeft">
+                            <div class="card-body">
+                                <h5><i class="fas fa-eye text-primary me-2"></i>Our Vision</h5>
+                                <p>To be the leading grocery retailer known for quality, convenience, and community connection.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card card-custom animate-fadeInRight">
+                            <div class="card-body">
+                                <h5><i class="fas fa-bullseye text-success me-2"></i>Our Mission</h5>
+                                <p>To provide fresh, affordable groceries with exceptional customer service while supporting local communities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Products Page -->
+    <div id="products" class="page-content">
+        <section class="py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="animate-fadeInUp">Our Products</h2>
+                        <p class="lead text-muted animate-fadeInUp" style="animation-delay: 0.2s;">Discover our wide range of fresh and quality products</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-item animate-fadeInUp">
+                            <div class="product-icon">
+                                <i class="fas fa-apple-alt"></i>
+                            </div>
+                            <h5>Fresh Fruits</h5>
+                            <p class="text-muted">Seasonal and exotic fruits sourced directly from local farms</p>
+                            <button class="btn btn-success-custom">View Collection</button>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-item animate-fadeInUp" style="animation-delay: 0.1s;">
+                            <div class="product-icon">
+                                <i class="fas fa-carrot"></i>
+                            </div>
+                            <h5>Vegetables</h5>
+                            <p class="text-muted">Organic and conventional vegetables, always fresh and crisp</p>
+                            <button class="btn btn-success-custom">View Collection</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-item animate-fadeInUp" style="animation-delay: 0.2s;">
+                            <div class="product-icon">
+                                <i class="fas fa-cheese"></i>
+                            </div>
+                            <h5>Dairy Products</h5>
+                            <p class="text-muted">Premium milk, cheese, yogurt, and other dairy essentials</p>
+                            <button class="btn btn-success-custom">View Collection</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-item animate-fadeInUp" style="animation-delay: 0.3s;">
+                            <div class="product-icon">
+                                <i class="fas fa-bread-slice"></i>
+                            </div>
+                            <h5>Bakery</h5>
+                            <p class="text-muted">Fresh bread, pastries, and baked goods made daily</p>
+                            <button class="btn btn-success-custom">View Collection</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-item animate-fadeInUp" style="animation-delay: 0.4s;">
+                            <div class="product-icon">
+                                <i class="fas fa-fish"></i>
+                            </div>
+                            <h5>Meat & Seafood</h5>
+                            <p class="text-muted">Fresh cuts of meat and seafood from trusted suppliers</p>
+                            <button class="btn btn-success-custom">View Collection</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-item animate-fadeInUp" style="animation-delay: 0.5s;">
+                            <div class="product-icon">
+                                <i class="fas fa-cookie-bite"></i>
+                            </div>
+                            <h5>Snacks & Treats</h5>
+                            <p class="text-muted">Delicious snacks, candies, and treats for every craving</p>
+                            <button class="btn btn-success-custom">View Collection</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Services Page -->
+    <div id="services" class="page-content">
+        <section class="py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="animate-fadeInUp">Our Services</h2>
+                        <p class="lead text-muted animate-fadeInUp" style="animation-delay: 0.2s;">We go beyond just selling groceries</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="text-center animate-fadeInLeft">
+                            <div class="service-icon">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <h4>Home Delivery</h4>
+                            <p class="text-muted">Fast and reliable delivery service to your doorstep. Order online or by phone for same-day delivery.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="text-center animate-fadeInUp" style="animation-delay: 0.2s;">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Online Shopping</h4>
+                            <p class="text-muted">Browse and shop from our complete inventory through our user-friendly mobile app and website.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="text-center animate-fadeInRight" style="animation-delay: 0.4s;">
+                            <div class="service-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h4>Meal Planning</h4>
+                            <p class="text-muted">Get personalized meal plans and recipe suggestions based on your dietary preferences and budget.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="text-center animate-fadeInLeft" style="animation-delay: 0.6s;">
+                            <div class="service-icon">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <h4>Personal Shopping</h4>
+                            <p class="text-muted">Let our trained staff do the shopping for you. Perfect for busy schedules and special dietary needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="text-center animate-fadeInUp" style="animation-delay: 0.8s;">
+                            <div class="service-icon">
+                                <i class="fas fa-birthday-cake"></i>
+                            </div>
+                            <h4>Special Orders</h4>
+                            <p class="text-muted">Custom cakes, specialty items, and bulk orders for parties and special events.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="text-center animate-fadeInRight" style="animation-delay: 1s;">
+                            <div class="service-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h4>24/7 Support</h4>
+                            <p class="text-muted">Round-the-clock customer support for all your queries and concerns. We're always here to help!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Locations Page -->
+    <div id="locations" class="page-content">
+        <section class="py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="animate-fadeInUp">Our Locations</h2>
+                        <p class="lead text-muted animate-fadeInUp" style="animation-delay: 0.2s;">Find a Fresh Mart store near you</p>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="map-placeholder animate-fadeInUp">
+                            <div class="text-center">
+                                <i class="fas fa-map-marked-alt fa-3x mb-3"></i>
+                                <h5>Interactive Store Locator</h5>
+                                <p>Use our online store locator to find the nearest Fresh Mart location</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card card-custom animate-fadeInLeft">
+                            <div class="card-body">
+                                <h5><i class="fas fa-map-marker-alt text-primary me-2"></i>Downtown Store</h5>
+                                <p class="text-muted mb-3">123 Main Street, Downtown<br>Open:
+</body>
+</html>
